@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ea994f2-c2d8-4d44-81e2-ae4a719ea21c" name="デフォルト変更リスト" comment="">
+      <change beforePath="$PROJECT_DIR$/IHM07M1.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/IHM07M1.ioc" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1oqHlQTeDAckXTYv8frAzH9oIOe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ea994f2-c2d8-4d44-81e2-ae4a719ea21c" name="デフォルト変更リスト" comment="" />
+      <created>1614007350626</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614007350626</updated>
+      <workItem from="1614007351843" duration="1503000" />
+      <workItem from="1614009395552" duration="231000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2598" y="157" key="#SSH_設定" timestamp="1614009569785">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state x="2598" y="157" key="#SSH_設定/0.0.1920.1040/4480.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1614009569785" />
+    <state x="2354" y="150" width="1337" height="725" key="SettingsEditor" timestamp="1614009624563">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state x="2354" y="150" width="1337" height="725" key="SettingsEditor/0.0.1920.1040/4480.0.1920.1040/1920.0.2560.1040@1920.0.2560.1040" timestamp="1614009624563" />
+  </component>
+</project>
