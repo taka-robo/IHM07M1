@@ -1,0 +1,5 @@
+/home/taka/Downloads/clion-2020.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/arm-none-eabi-gcc -DCMAKE_CXX_COMPILER=/usr/bin/arm-none-eabi-g++ -G "CodeBlocks - Unix Makefiles" /home/taka/Documents/ssl_ws/IHM07M1/STM32
+-- Minimal optimization, debug info included
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32
