@@ -45,7 +45,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint8_t hall_state=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -91,7 +91,7 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  uint8_t h1,h2,h3,hall_state;
+  uint8_t h1,h2,h3;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -101,7 +101,8 @@ int main(void)
     h1=HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_15);
     h2=HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_3);
     h3=HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_10);
-    hall_state = (h1|h2|h3);
+    hall_state = ((h1<<2)|(h2<<1)|h3);
+    HAL_Delay(10);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
