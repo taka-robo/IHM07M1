@@ -93,6 +93,16 @@ int main(void)
   uint8_t h1,h2,h3;
   uint8_t hall_state=0;
   float duty=0;
+  if (HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1) != HAL_OK) {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2) != HAL_OK) {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3) != HAL_OK) {
+    Error_Handler();
+  }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
