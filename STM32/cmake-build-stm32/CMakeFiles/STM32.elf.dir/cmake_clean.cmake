@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/STM32.elf.dir/Core/Src/adc.c.obj"
   "CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj"
   "CMakeFiles/STM32.elf.dir/Core/Src/main.cpp.obj"
   "CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
@@ -10,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj"
   "CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f446retx.s.obj"
   "CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+  "CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj"
+  "CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj"
   "CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
   "CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
   "CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"

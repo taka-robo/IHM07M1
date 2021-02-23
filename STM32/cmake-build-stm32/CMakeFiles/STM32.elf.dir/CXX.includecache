@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../Core/Inc/adc.h
+main.h
+../Core/Inc/main.h
+
 ../Core/Inc/gpio.h
 main.h
 ../Core/Inc/main.h
@@ -230,6 +234,16 @@ mpu_armv7.h
 stm32f4xx_hal_conf.h
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_conf.h
 
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+stm32f4xx_hal_def.h
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+stm32f4xx_hal_adc_ex.h
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
+
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
+stm32f4xx_hal_def.h
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
 stm32f4xx_hal_def.h
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
@@ -323,6 +337,8 @@ tim.h
 /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/tim.h
 usart.h
 /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/usart.h
+adc.h
+/home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/adc.h
 gpio.h
 /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/gpio.h
 

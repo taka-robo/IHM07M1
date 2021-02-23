@@ -21,6 +21,7 @@
 #include "main.h"
 #include "tim.h"
 #include "usart.h"
+#include "adc.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -45,6 +46,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+uint16_t duty=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -89,10 +91,10 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
   uint8_t h1,h2,h3;
   uint8_t hall_state=0;
-  float duty=0;
   if (HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1) != HAL_OK) {
     Error_Handler();
   }
@@ -102,6 +104,9 @@ int main(void)
   if (HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3) != HAL_OK) {
     Error_Handler();
   }
+  if(HAL_ADC_Start(&hadc1) != HAL_OK){
+    Error_Handler();
+  }
 
   /* USER CODE END 2 */
 
@@ -109,6 +114,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    if( HAL_ADC_PollForConversion(&hadc1, 1000) == HAL_OK )
+    {
+      duty = HAL_ADC_GetValue(&hadc1)*999/4095;
+    }
     h1=HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_15);
     h2=HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_3);
     h3=HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_10);
@@ -120,7 +129,7 @@ int main(void)
       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_SET);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,duty);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
-      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3,0);
       break;
     case 2://V>U
       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_SET);
@@ -128,7 +137,7 @@ int main(void)
       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_RESET);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,duty);
-      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3,0);
       break;
     case 3://V>W
       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_RESET);
@@ -136,7 +145,7 @@ int main(void)
       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_SET);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,duty);
-      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3,0);
       break;
     case 4:
       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_RESET);
@@ -144,7 +153,7 @@ int main(void)
       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_SET);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
-      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,duty);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3,duty);
       break;
     case 5:
       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_SET);
@@ -152,7 +161,7 @@ int main(void)
       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_RESET);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,duty);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
-      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3,0);
       break;
     case 6:
       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_SET);
@@ -160,7 +169,7 @@ int main(void)
       HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_SET);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
       __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
-      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,duty);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3,duty);
       break;
     }
     /* USER CODE END WHILE */

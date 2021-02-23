@@ -96,6 +96,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Inc/adc.h">
+			<Option target="STM32.elf"/>
+		</Unit>
 		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Inc/gpio.h">
 			<Option target="STM32.elf"/>
 		</Unit>
@@ -112,6 +115,9 @@
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Inc/usart.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/adc.c">
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/gpio.c">
@@ -222,6 +228,12 @@
 		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
 			<Option target="STM32.elf"/>
 		</Unit>
+		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h">
+			<Option target="STM32.elf"/>
+		</Unit>
 		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
 			<Option target="STM32.elf"/>
 		</Unit>
@@ -274,6 +286,12 @@
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c">
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="/home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">

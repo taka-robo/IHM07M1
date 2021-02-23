@@ -77,9 +77,22 @@ include CMakeFiles/STM32.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/STM32.elf.dir/flags.make
 
+CMakeFiles/STM32.elf.dir/Core/Src/adc.c.obj: CMakeFiles/STM32.elf.dir/flags.make
+CMakeFiles/STM32.elf.dir/Core/Src/adc.c.obj: ../Core/Src/adc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/adc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Core/Src/adc.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/adc.c
+
+CMakeFiles/STM32.elf.dir/Core/Src/adc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32.elf.dir/Core/Src/adc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/adc.c > CMakeFiles/STM32.elf.dir/Core/Src/adc.c.i
+
+CMakeFiles/STM32.elf.dir/Core/Src/adc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32.elf.dir/Core/Src/adc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/adc.c -o CMakeFiles/STM32.elf.dir/Core/Src/adc.c.s
+
 CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj: ../Core/Src/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/gpio.c
 
 CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.i: cmake_force
@@ -92,7 +105,7 @@ CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.s: cmake_force
 
 CMakeFiles/STM32.elf.dir/Core/Src/main.cpp.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Core/Src/main.cpp.obj: ../Core/Src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/STM32.elf.dir/Core/Src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/STM32.elf.dir/Core/Src/main.cpp.obj"
 	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STM32.elf.dir/Core/Src/main.cpp.obj -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/main.cpp
 
 CMakeFiles/STM32.elf.dir/Core/Src/main.cpp.i: cmake_force
@@ -105,7 +118,7 @@ CMakeFiles/STM32.elf.dir/Core/Src/main.cpp.s: cmake_force
 
 CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: ../Core/Src/stm32f4xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/stm32f4xx_hal_msp.c
 
 CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.i: cmake_force
@@ -118,7 +131,7 @@ CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.s: cmake_force
 
 CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_it.c.obj: ../Core/Src/stm32f4xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_it.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_it.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/stm32f4xx_it.c
 
 CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_it.c.i: cmake_force
@@ -131,7 +144,7 @@ CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_it.c.s: cmake_force
 
 CMakeFiles/STM32.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Core/Src/syscalls.c.obj: ../Core/Src/syscalls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/syscalls.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Core/Src/syscalls.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/syscalls.c
 
 CMakeFiles/STM32.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -144,7 +157,7 @@ CMakeFiles/STM32.elf.dir/Core/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/STM32.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Core/Src/sysmem.c.obj: ../Core/Src/sysmem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/sysmem.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Core/Src/sysmem.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/sysmem.c
 
 CMakeFiles/STM32.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -157,7 +170,7 @@ CMakeFiles/STM32.elf.dir/Core/Src/sysmem.c.s: cmake_force
 
 CMakeFiles/STM32.elf.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Core/Src/system_stm32f4xx.c.obj: ../Core/Src/system_stm32f4xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/system_stm32f4xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/system_stm32f4xx.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Core/Src/system_stm32f4xx.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/system_stm32f4xx.c
 
 CMakeFiles/STM32.elf.dir/Core/Src/system_stm32f4xx.c.i: cmake_force
@@ -170,7 +183,7 @@ CMakeFiles/STM32.elf.dir/Core/Src/system_stm32f4xx.c.s: cmake_force
 
 CMakeFiles/STM32.elf.dir/Core/Src/tim.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Core/Src/tim.c.obj: ../Core/Src/tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/tim.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Core/Src/tim.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/tim.c
 
 CMakeFiles/STM32.elf.dir/Core/Src/tim.c.i: cmake_force
@@ -183,7 +196,7 @@ CMakeFiles/STM32.elf.dir/Core/Src/tim.c.s: cmake_force
 
 CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj: ../Core/Src/usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Src/usart.c
 
 CMakeFiles/STM32.elf.dir/Core/Src/usart.c.i: cmake_force
@@ -196,12 +209,12 @@ CMakeFiles/STM32.elf.dir/Core/Src/usart.c.s: cmake_force
 
 CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f446retx.s.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f446retx.s.obj: ../Core/Startup/startup_stm32f446retx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building ASM object CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f446retx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building ASM object CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f446retx.s.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f446retx.s.obj -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Core/Startup/startup_stm32f446retx.s
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i: cmake_force
@@ -212,9 +225,35 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s
 
+CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj: CMakeFiles/STM32.elf.dir/flags.make
+CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
+
+CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c > CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i
+
+CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s
+
+CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj: CMakeFiles/STM32.elf.dir/flags.make
+CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
+
+CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c > CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i
+
+CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s
+
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i: cmake_force
@@ -227,7 +266,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i: cmake_force
@@ -240,7 +279,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.s:
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i: cmake_force
@@ -253,7 +292,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i: cmake_force
@@ -266,7 +305,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.s
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i: cmake_force
@@ -279,7 +318,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i: cmake_force
@@ -292,7 +331,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i: cmake_force
@@ -305,7 +344,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ra
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i: cmake_force
@@ -318,7 +357,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.s
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i: cmake_force
@@ -331,7 +370,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.s:
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i: cmake_force
@@ -344,7 +383,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i: cmake_force
@@ -357,7 +396,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.s:
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i: cmake_force
@@ -370,7 +409,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.i: cmake_force
@@ -383,7 +422,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.s:
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.i: cmake_force
@@ -396,7 +435,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/STM32.elf.dir/flags.make
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj   -c /home/taka/Documents/ssl_ws/IHM07M1/STM32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
 
 CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i: cmake_force
@@ -409,6 +448,7 @@ CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
 
 # Object files for target STM32.elf
 STM32_elf_OBJECTS = \
+"CMakeFiles/STM32.elf.dir/Core/Src/adc.c.obj" \
 "CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj" \
 "CMakeFiles/STM32.elf.dir/Core/Src/main.cpp.obj" \
 "CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" \
@@ -420,6 +460,8 @@ STM32_elf_OBJECTS = \
 "CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj" \
 "CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f446retx.s.obj" \
 "CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj" \
+"CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj" \
+"CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj" \
 "CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj" \
 "CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj" \
 "CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj" \
@@ -439,6 +481,7 @@ STM32_elf_OBJECTS = \
 # External object files for target STM32.elf
 STM32_elf_EXTERNAL_OBJECTS =
 
+STM32.elf: CMakeFiles/STM32.elf.dir/Core/Src/adc.c.obj
 STM32.elf: CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj
 STM32.elf: CMakeFiles/STM32.elf.dir/Core/Src/main.cpp.obj
 STM32.elf: CMakeFiles/STM32.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
@@ -450,6 +493,8 @@ STM32.elf: CMakeFiles/STM32.elf.dir/Core/Src/tim.c.obj
 STM32.elf: CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj
 STM32.elf: CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f446retx.s.obj
 STM32.elf: CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+STM32.elf: CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+STM32.elf: CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
 STM32.elf: CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
 STM32.elf: CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
 STM32.elf: CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
@@ -467,7 +512,7 @@ STM32.elf: CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_h
 STM32.elf: CMakeFiles/STM32.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 STM32.elf: CMakeFiles/STM32.elf.dir/build.make
 STM32.elf: CMakeFiles/STM32.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable STM32.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable STM32.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/STM32.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/STM32.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/taka/Documents/ssl_ws/IHM07M1/STM32/cmake-build-stm32/STM32.bin"
