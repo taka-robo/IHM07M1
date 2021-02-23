@@ -45,7 +45,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint8_t hall_state=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -92,6 +91,8 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   uint8_t h1,h2,h3;
+  uint8_t hall_state=0;
+  float duty=0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -102,7 +103,56 @@ int main(void)
     h2=HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_3);
     h3=HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_10);
     hall_state = ((h1<<2)|(h2<<1)|h3);
-    HAL_Delay(10);
+    switch (hall_state) {
+    case 1://U>W
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_11,GPIO_PIN_RESET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_SET);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,duty);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      break;
+    case 2://V>U
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_11,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_RESET);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,duty);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      break;
+    case 3://V>W
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_RESET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_11,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_SET);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,duty);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      break;
+    case 4:
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_RESET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_11,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_SET);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,duty);
+      break;
+    case 5:
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_11,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_RESET);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,duty);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      break;
+    case 6:
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_SET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_11,GPIO_PIN_RESET);
+      HAL_GPIO_WritePin(GPIOC,GPIO_PIN_12,GPIO_PIN_SET);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,0);
+      __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,duty);
+      break;
+    }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
